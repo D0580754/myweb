@@ -12,7 +12,7 @@ app=Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("hello.html", greetings="Hello world!")
+    return "Hello Flask 2"
 
 @app.route("/test")
 def test():
