@@ -6,13 +6,13 @@ Created on Tue Nov  5 19:54:19 2019
 """
 
 from flask import Flask
-
+from flask import render_template
 app=Flask(__name__)
 
 
 @app.route("/")
 def home():
-    return "Hello Flask 2"
+    return render_template("hello.html", greetings="Hello world!")
 
 @app.route("/test")
 def test():
